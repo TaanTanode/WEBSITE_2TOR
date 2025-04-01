@@ -50,7 +50,7 @@ const Register = () => {
     // }
     // console.log('Ok')
     try {
-      const res = await axios.post('http://localhost:5000/api/register', data)
+      const res = await axios.post('https://client-2-tor-api.vercel.app/api/register', data)
       console.log(res.data)
       toast.success(res.data)
     } catch (err) {
